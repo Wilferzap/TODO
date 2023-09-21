@@ -1,13 +1,21 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom/client";
+// anyadimos bootstrap
+import "bootstrap/dist/css/bootstrap.css";
+import "bootstrap-icons/font/bootstrap-icons.css";
+// los estilos propios van debajo de bootstrap para que no se pisen los estilos
+import "./index.css";
+import App from "./App";
+import reportWebVitals from "./reportWebVitals";
+import AppRoutingOne from "./AppRouterOne";
+import AppRouterFinal from "./AppRouterFinal";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <App />
+    {/* <App /> */}
+    {/* <AppRoutingOne></AppRoutingOne> */}
+    <AppRouterFinal></AppRouterFinal>
   </React.StrictMode>
 );
 
