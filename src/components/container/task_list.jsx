@@ -69,29 +69,31 @@ const TaskListComponent = () => {
 
   const Table = () => {
     return (
-      <table className="table">
-        <thead>
-          <tr>
-            <th scope="col">Title</th>
-            <th scope="col">Description</th>
-            <th scope="col">Priority</th>
-            <th scope="col">State</th>
-          </tr>
-        </thead>
-        <tbody>
-          {/* TODO: ietrar sobre una lista de tareas */}
-          {tasks.map((task, index) => {
-            return (
-              <TaskComponent
-                key={index}
-                task={task}
-                completed={completeTask}
-                remove={deleteTask}
-              ></TaskComponent>
-            );
-          })}
-        </tbody>
-      </table>
+      <div style={{ height: "100%", overflowY: "auto" }}>
+        <table className="table">
+          <thead>
+            <tr>
+              <th scope="col">Title</th>
+              <th scope="col">Description</th>
+              <th scope="col">Priority</th>
+              <th scope="col">State</th>
+            </tr>
+          </thead>
+          <tbody>
+            {/* TODO: ietrar sobre una lista de tareas */}
+            {tasks.map((task, index) => {
+              return (
+                <TaskComponent
+                  key={index}
+                  task={task}
+                  completed={completeTask}
+                  remove={deleteTask}
+                ></TaskComponent>
+              );
+            })}
+          </tbody>
+        </table>
+      </div>
     );
   };
 
@@ -120,8 +122,13 @@ const TaskListComponent = () => {
   };
 
   return (
-    <div>
-      <div className="col-12">
+    <div
+      style={{
+        justifyContent: "center",
+        alignContent: "center",
+      }}
+    >
+      <div className="card-12" style={{ width: "25rem" }}>
         <div className="card">
           <div className="card-header p-3">
             <h5>TODO LIST:</h5>
@@ -129,9 +136,8 @@ const TaskListComponent = () => {
           <div
             className="card-body"
             data-mdb-perfect-scrollbar="true"
-            style={{ position: "relative", height: "400px" }}
+            style={{ position: "relative", height: "350px" }}
           >
-            {/* TODO: add loading spinner */}
             {loading ? <p style={loadingStyle}>loading task...</p> : tasksTable}
           </div>
         </div>

@@ -33,7 +33,7 @@ const LoginFormik = () => {
   return (
     <div>
       <div>
-        <h4>Login Formil</h4>
+        <h5>Please enter your details</h5>
       </div>
 
       <Formik
@@ -66,7 +66,7 @@ const LoginFormik = () => {
           // creamos el formulario
 
           <Form>
-            <div className="card" style={{ width: "18rem" }}>
+            <div className="card" style={{ width: "20rem" }}>
               <ul className="list-group list-group-flush">
                 <li className="list-group-item">
                   <label htmlFor="email">Email: </label>
@@ -84,7 +84,8 @@ const LoginFormik = () => {
                   )}
                 </li>
 
-                <li className="list-group-item" style={{ display: "flex" }}>
+                <li className="list-group-item">
+                  {/*style={{ display: "flex" }}*/}
                   <label htmlFor="password">Password: </label>
                   <Field
                     style={{ border: "0px" }}
