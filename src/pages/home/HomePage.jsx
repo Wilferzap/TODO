@@ -31,8 +31,8 @@ const HomePage = () => {
         </h1>
 
         <p className="card-text">
-          Some quick example text to build on the card title and make up the
-          bulk of the card's content.
+          Organize your daily life with our to-do list app. Keep it simple and
+          efficient! Download it and boost your productivity.
         </p>
         <div className="container" style={{ padding: "0" }}>
           <div className="row justify-content-md-center ">
