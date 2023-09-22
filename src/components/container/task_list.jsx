@@ -15,7 +15,7 @@ const TaskListComponent = () => {
   );
   const defaultTask2 = new Task(
     "Example2",
-    "Default description",
+    "Default description 2",
     true,
     LEVELS.URGENT
   );

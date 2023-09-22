@@ -51,7 +51,6 @@ const TaskForm = ({ add, length }) => {
             type="text"
             required
             className="form-control form-control-lg"
-            autoFocus
             placeholder="Task name:"
           ></input>
           <input

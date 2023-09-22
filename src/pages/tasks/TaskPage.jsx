@@ -8,6 +8,7 @@ const TaskPage = () => {
         padding: "1rem",
         justifyContent: "center",
         alignContent: "center",
+        margin: "1rem",
       }}
     >
       <TaskListComponent></TaskListComponent>
